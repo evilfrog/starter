@@ -1,0 +1,4 @@
+# m h dom mon dow user  command
+
+#Spawn new crawlers
+#0 * * * * root /usr/local/bin/php /var/www/app/bin/console foo:bar >> /var/www/app/var/logs/foo-bar.log
