@@ -9,7 +9,8 @@ RUN apt-get update -y --fix-missing && \
     apt-get install -y g++ && \
     apt-get install -y zlib1g-dev && \
     apt-get install -y libicu-dev && \
-    apt-get install -y curl
+    apt-get install -y curl && \
+    apt-get install -y git
 
 RUN docker-php-ext-configure intl && \
     docker-php-ext-install iconv && \
