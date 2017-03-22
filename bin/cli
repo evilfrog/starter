@@ -1,0 +1,4 @@
+#!/bin/bash
+
+CMD="docker-compose run --rm php-cli $@"
+bash -c "$CMD"
