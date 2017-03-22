@@ -41,6 +41,11 @@ services:
         volumes:
             - ./docker/etc/php/php-cli.ini:/usr/local/etc/php/php.ini
 
+    phantomjs:
+        image: evilfrog/starter-phantomjs:prod
+        build: docker/images/phantomjs
+        working_dir: /var/www/app
+
     mysql:
         image: mysql:5.7.16
         environment:
