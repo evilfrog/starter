@@ -32,6 +32,18 @@ git clone git@github.com:evilfrog/starter.git .
 ./bin/composer install
 ```
 
+3. ***REMOVE*** .git directory - you want to start fresh, don't you?
+
+```
+rm -rf .git/
+```
+
+4. Init your very own repository
+
+```
+git init .
+```
+
 ## Behat
 
 1. Setup a hostname for yourself, ex. `starter.dock`, point it to your machine's IP
