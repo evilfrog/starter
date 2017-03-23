@@ -1,0 +1,18 @@
+default:
+    extensions:
+        Behat\Symfony2Extension: ~
+        Behat\MinkExtension:
+            base_url:  'http://192.168.100.100/'
+            browser_name: 'chrome'
+            sessions:
+                default:
+                    symfony2: ~
+                selenium2:
+                    selenium2:
+                        # wd_host: http://selenium:4444/wd/hub/
+                        wd_host: http://phantomjs:4444/wd/hub/
+                        capabilities:
+                            version: ''
+    suites:
+        starter:
+            paths:     [ %paths.base%/features/starter ]
